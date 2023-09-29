@@ -1,41 +1,13 @@
 let express = require('express');
 let app = express();
 
-console.log('prueba');
+console.log('Hello Express')
+
+
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "index.html");
+  });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- module.exports = app;
+module.exports = app;
